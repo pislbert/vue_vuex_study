@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './app.vue'
 import store from './store'
 
-// 简单的 Vue 计数
+// 最基本的 Vuex 记数应用
 
 new Vue({
   el: '#app',
