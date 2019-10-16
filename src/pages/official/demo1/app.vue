@@ -14,13 +14,14 @@ export default {
   //     count: this.$store.state.count
   //   }
   // },
-  computed:{ // computed 会自动监视计数，data还要赋值才行
-    count(){
+  computed: {
+    // computed 会自动监视计数，data还要赋值才行
+    count() {
       return this.$store.state.count
     }
   },
-  methods:{
-    add(){
+  methods: {
+    add() {
       this.$store.commit('increment')
       // this.count = this.$store.state.count
     }
