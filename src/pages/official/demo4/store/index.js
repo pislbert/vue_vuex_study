@@ -22,7 +22,7 @@ const store = new Vuex.Store({
         doneTodosCount: (state, getters) => {
             return getters.doneTodos.length
         },
-        // 返回值是一个函数
+        // 返回值是一个函数  getter 在通过方法访问时，每次都会去进行调用，而不会缓存结果
         getTodoById: state => id => {
             return state.todos.find(todo => todo.id === id)
         }
